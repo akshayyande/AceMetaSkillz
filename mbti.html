@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MBTI Personality Test</title>
+    <script>
+        let scores = {E: 0, I: 0, S: 0, N: 0, T: 0, F: 0, J: 0, P: 0};
+        function answer(trait) {
+            scores[trait] += 1;
+        }
+        function calculateResult() {
+            let result = "";
+            result += scores.E > scores.I ? "E" : "I";
+            result += scores.S > scores.N ? "S" : "N";
+            result += scores.T > scores.F ? "T" : "F";
+            result += scores.J > scores.P ? "J" : "P";
+            window.location.href = "/results/mbti-" + result + ".html";
+        }
+    </script>
+</head>
+<body>
+    <h1>MBTI Full Test</h1>
+    <form>
+    <p>1. You enjoy group activities.</p>
+<button type='button' onclick="answer('E')">Agree</button>
+<button type='button' onclick="answer('I')">Disagree</button><br><br>
+<p>2. You feel energized after social events.</p>
+<button type='button' onclick="answer('E')">Agree</button>
+<button type='button' onclick="answer('I')">Disagree</button><br><br>
+<p>3. You prefer to talk through ideas.</p>
+<button type='button' onclick="answer('E')">Agree</button>
+<button type='button' onclick="answer('I')">Disagree</button><br><br>
+<p>4. You act first, think later.</p>
+<button type='button' onclick="answer('E')">Agree</button>
+<button type='button' onclick="answer('I')">Disagree</button><br><br>
+<p>5. You like being the center of attention.</p>
+<button type='button' onclick="answer('E')">Agree</button>
+<button type='button' onclick="answer('I')">Disagree</button><br><br>
+<p>6. You express emotions easily.</p>
+<button type='button' onclick="answer('E')">Agree</button>
+<button type='button' onclick="answer('I')">Disagree</button><br><br>
+<p>7. You prefer meeting new people.</p>
+<button type='button' onclick="answer('E')">Agree</button>
+<button type='button' onclick="answer('I')">Disagree</button><br><br>
+<p>8. You enjoy being around crowds.</p>
+<button type='button' onclick="answer('E')">Agree</button>
+<button type='button' onclick="answer('I')">Disagree</button><br><br>
+<p>9. You like to initiate conversations.</p>
+<button type='button' onclick="answer('E')">Agree</button>
+<button type='button' onclick="answer('I')">Disagree</button><br><br>
+<p>10. You often speak before you think.</p>
+<button type='button' onclick="answer('E')">Agree</button>
+<button type='button' onclick="answer('I')">Disagree</button><br><br>
+<p>11. You enjoy fast-paced environments.</p>
+<button type='button' onclick="answer('E')">Agree</button>
+<button type='button' onclick="answer('I')">Disagree</button><br><br>
+<p>12. You feel drained after alone time.</p>
+<button type='button' onclick="answer('E')">Agree</button>
+<button type='button' onclick="answer('I')">Disagree</button><br><br>
+<p>13. You enjoy networking.</p>
+<button type='button' onclick="answer('E')">Agree</button>
+<button type='button' onclick="answer('I')">Disagree</button><br><br>
+<p>14. You love parties.</p>
+<button type='button' onclick="answer('E')">Agree</button>
+<button type='button' onclick="answer('I')">Disagree</button><br><br>
+<p>15. You get bored being alone.</p>
+<button type='button' onclick="answer('E')">Agree</button>
+<button type='button' onclick="answer('I')">Disagree</button><br><br>
+<p>16. You like group brainstorming.</p>
+<button type='button' onclick="answer('E')">Agree</button>
+<button type='button' onclick="answer('I')">Disagree</button><br><br>
+<p>17. You multitask well in social settings.</p>
+<button type='button' onclick="answer('E')">Agree</button>
+<button type='button' onclick="answer('I')">Disagree</button><br><br>
+<p>18. You prefer action to reflection.</p>
+<button type='button' onclick="answer('E')">Agree</button>
+<button type='button' onclick="answer('I')">Disagree</button><br><br>
+<p>19. You enjoy collaboration.</p>
+<button type='button' onclick="answer('E')">Agree</button>
+<button type='button' onclick="answer('I')">Disagree</button><br><br>
+<p>20. You are outgoing and lively.</p>
+<button type='button' onclick="answer('E')">Agree</button>
+<button type='button' onclick="answer('I')">Disagree</button><br><br>
+<p>21. You trust experience over theories.</p>
+<button type='button' onclick="answer('S')">Agree</button>
+<button type='button' onclick="answer('N')">Disagree</button><br><br>
+<p>22. You focus on real-world applications.</p>
+<button type='button' onclick="answer('S')">Agree</button>
+<button type='button' onclick="answer('N')">Disagree</button><br><br>
+<p>23. You prefer facts to ideas.</p>
+<button type='button' onclick="answer('S')">Agree</button>
+<button type='button' onclick="answer('N')">Disagree</button><br><br>
+<p>24. You notice details easily.</p>
+<button type='button' onclick="answer('S')">Agree</button>
+<button type='button' onclick="answer('N')">Disagree</button><br><br>
+<p>25. You value practicality.</p>
+<button type='button' onclick="answer('S')">Agree</button>
+<button type='button' onclick="answer('N')">Disagree</button><br><br>
+<p>26. You prefer hands-on work.</p>
+<button type='button' onclick="answer('S')">Agree</button>
+<button type='button' onclick="answer('N')">Disagree</button><br><br>
+<p>27. You like certainty.</p>
+<button type='button' onclick="answer('S')">Agree</button>
+<button type='button' onclick="answer('N')">Disagree</button><br><br>
+<p>28. You enjoy step-by-step instructions.</p>
+<button type='button' onclick="answer('S')">Agree</button>
+<button type='button' onclick="answer('N')">Disagree</button><br><br>
+<p>29. You rely on your five senses.</p>
+<button type='button' onclick="answer('S')">Agree</button>
+<button type='button' onclick="answer('N')">Disagree</button><br><br>
+<p>30. You enjoy tradition and routine.</p>
+<button type='button' onclick="answer('S')">Agree</button>
+<button type='button' onclick="answer('N')">Disagree</button><br><br>
+<p>31. You focus on present realities.</p>
+<button type='button' onclick="answer('S')">Agree</button>
+<button type='button' onclick="answer('N')">Disagree</button><br><br>
+<p>32. You ask 'what is' over 'what could be'.</p>
+<button type='button' onclick="answer('S')">Agree</button>
+<button type='button' onclick="answer('N')">Disagree</button><br><br>
+<p>33. You enjoy measuring results.</p>
+<button type='button' onclick="answer('S')">Agree</button>
+<button type='button' onclick="answer('N')">Disagree</button><br><br>
+<p>34. You believe in proven methods.</p>
+<button type='button' onclick="answer('S')">Agree</button>
+<button type='button' onclick="answer('N')">Disagree</button><br><br>
+<p>35. You seek solid evidence.</p>
+<button type='button' onclick="answer('S')">Agree</button>
+<button type='button' onclick="answer('N')">Disagree</button><br><br>
+<p>36. You like clear outcomes.</p>
+<button type='button' onclick="answer('S')">Agree</button>
+<button type='button' onclick="answer('N')">Disagree</button><br><br>
+<p>37. You value stability.</p>
+<button type='button' onclick="answer('S')">Agree</button>
+<button type='button' onclick="answer('N')">Disagree</button><br><br>
+<p>38. You use real-life examples.</p>
+<button type='button' onclick="answer('S')">Agree</button>
+<button type='button' onclick="answer('N')">Disagree</button><br><br>
+<p>39. You trust tangible data.</p>
+<button type='button' onclick="answer('S')">Agree</button>
+<button type='button' onclick="answer('N')">Disagree</button><br><br>
+<p>40. You enjoy straightforward tasks.</p>
+<button type='button' onclick="answer('S')">Agree</button>
+<button type='button' onclick="answer('N')">Disagree</button><br><br>
+<p>41. You value logic over feelings.</p>
+<button type='button' onclick="answer('T')">Agree</button>
+<button type='button' onclick="answer('F')">Disagree</button><br><br>
+<p>42. You enjoy debates.</p>
+<button type='button' onclick="answer('T')">Agree</button>
+<button type='button' onclick="answer('F')">Disagree</button><br><br>
+<p>43. You prefer objective decisions.</p>
+<button type='button' onclick="answer('T')">Agree</button>
+<button type='button' onclick="answer('F')">Disagree</button><br><br>
+<p>44. You focus on justice.</p>
+<button type='button' onclick="answer('T')">Agree</button>
+<button type='button' onclick="answer('F')">Disagree</button><br><br>
+<p>45. You solve problems rationally.</p>
+<button type='button' onclick="answer('T')">Agree</button>
+<button type='button' onclick="answer('F')">Disagree</button><br><br>
+<p>46. You are task-oriented.</p>
+<button type='button' onclick="answer('T')">Agree</button>
+<button type='button' onclick="answer('F')">Disagree</button><br><br>
+<p>47. You prioritize efficiency.</p>
+<button type='button' onclick="answer('T')">Agree</button>
+<button type='button' onclick="answer('F')">Disagree</button><br><br>
+<p>48. You prefer direct communication.</p>
+<button type='button' onclick="answer('T')">Agree</button>
+<button type='button' onclick="answer('F')">Disagree</button><br><br>
+<p>49. You are motivated by achievement.</p>
+<button type='button' onclick="answer('T')">Agree</button>
+<button type='button' onclick="answer('F')">Disagree</button><br><br>
+<p>50. You enjoy analyzing systems.</p>
+<button type='button' onclick="answer('T')">Agree</button>
+<button type='button' onclick="answer('F')">Disagree</button><br><br>
+<p>51. You give constructive criticism.</p>
+<button type='button' onclick="answer('T')">Agree</button>
+<button type='button' onclick="answer('F')">Disagree</button><br><br>
+<p>52. You separate emotion from facts.</p>
+<button type='button' onclick="answer('T')">Agree</button>
+<button type='button' onclick="answer('F')">Disagree</button><br><br>
+<p>53. You make decisions with your head.</p>
+<button type='button' onclick="answer('T')">Agree</button>
+<button type='button' onclick="answer('F')">Disagree</button><br><br>
+<p>54. You set measurable goals.</p>
+<button type='button' onclick="answer('T')">Agree</button>
+<button type='button' onclick="answer('F')">Disagree</button><br><br>
+<p>55. You value competition.</p>
+<button type='button' onclick="answer('T')">Agree</button>
+<button type='button' onclick="answer('F')">Disagree</button><br><br>
+<p>56. You like structured arguments.</p>
+<button type='button' onclick="answer('T')">Agree</button>
+<button type='button' onclick="answer('F')">Disagree</button><br><br>
+<p>57. You believe fairness is more important than empathy.</p>
+<button type='button' onclick="answer('T')">Agree</button>
+<button type='button' onclick="answer('F')">Disagree</button><br><br>
+<p>58. You focus on outcomes.</p>
+<button type='button' onclick="answer('T')">Agree</button>
+<button type='button' onclick="answer('F')">Disagree</button><br><br>
+<p>59. You stay calm in crises.</p>
+<button type='button' onclick="answer('T')">Agree</button>
+<button type='button' onclick="answer('F')">Disagree</button><br><br>
+<p>60. You prefer consistency to compassion.</p>
+<button type='button' onclick="answer('T')">Agree</button>
+<button type='button' onclick="answer('F')">Disagree</button><br><br>
+<p>61. You enjoy planning.</p>
+<button type='button' onclick="answer('J')">Agree</button>
+<button type='button' onclick="answer('P')">Disagree</button><br><br>
+<p>62. You stick to schedules.</p>
+<button type='button' onclick="answer('J')">Agree</button>
+<button type='button' onclick="answer('P')">Disagree</button><br><br>
+<p>63. You set long-term goals.</p>
+<button type='button' onclick="answer('J')">Agree</button>
+<button type='button' onclick="answer('P')">Disagree</button><br><br>
+<p>64. You like closure.</p>
+<button type='button' onclick="answer('J')">Agree</button>
+<button type='button' onclick="answer('P')">Disagree</button><br><br>
+<p>65. You organize tasks.</p>
+<button type='button' onclick="answer('J')">Agree</button>
+<button type='button' onclick="answer('P')">Disagree</button><br><br>
+<p>66. You dislike surprises.</p>
+<button type='button' onclick="answer('J')">Agree</button>
+<button type='button' onclick="answer('P')">Disagree</button><br><br>
+<p>67. You follow rules.</p>
+<button type='button' onclick="answer('J')">Agree</button>
+<button type='button' onclick="answer('P')">Disagree</button><br><br>
+<p>68. You finish what you start.</p>
+<button type='button' onclick="answer('J')">Agree</button>
+<button type='button' onclick="answer('P')">Disagree</button><br><br>
+<p>69. You work before play.</p>
+<button type='button' onclick="answer('J')">Agree</button>
+<button type='button' onclick="answer('P')">Disagree</button><br><br>
+<p>70. You prefer clear instructions.</p>
+<button type='button' onclick="answer('J')">Agree</button>
+<button type='button' onclick="answer('P')">Disagree</button><br><br>
+<p>71. You like punctuality.</p>
+<button type='button' onclick="answer('J')">Agree</button>
+<button type='button' onclick="answer('P')">Disagree</button><br><br>
+<p>72. You create to-do lists.</p>
+<button type='button' onclick="answer('J')">Agree</button>
+<button type='button' onclick="answer('P')">Disagree</button><br><br>
+<p>73. You enjoy structure.</p>
+<button type='button' onclick="answer('J')">Agree</button>
+<button type='button' onclick="answer('P')">Disagree</button><br><br>
+<p>74. You dislike last-minute changes.</p>
+<button type='button' onclick="answer('J')">Agree</button>
+<button type='button' onclick="answer('P')">Disagree</button><br><br>
+<p>75. You like knowing what's next.</p>
+<button type='button' onclick="answer('J')">Agree</button>
+<button type='button' onclick="answer('P')">Disagree</button><br><br>
+<p>76. You make decisions early.</p>
+<button type='button' onclick="answer('J')">Agree</button>
+<button type='button' onclick="answer('P')">Disagree</button><br><br>
+<p>77. You follow through quickly.</p>
+<button type='button' onclick="answer('J')">Agree</button>
+<button type='button' onclick="answer('P')">Disagree</button><br><br>
+<p>78. You like control.</p>
+<button type='button' onclick="answer('J')">Agree</button>
+<button type='button' onclick="answer('P')">Disagree</button><br><br>
+<p>79. You prepare in advance.</p>
+<button type='button' onclick="answer('J')">Agree</button>
+<button type='button' onclick="answer('P')">Disagree</button><br><br>
+<p>80. You enjoy routines.</p>
+<button type='button' onclick="answer('J')">Agree</button>
+<button type='button' onclick="answer('P')">Disagree</button><br><br>
+
+    <br><br>
+    <button type="button" onclick="calculateResult()">See Result</button>
+    </form>
+</body>
+</html>
